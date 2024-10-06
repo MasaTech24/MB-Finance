@@ -130,7 +130,7 @@ function sendOTP() {
           console.log('clicked')
           if(otpInp.value == otp){
             alert('Email address verified...')
-            window.location.replace("/my_account.html");
+            window.location.href="my_account.html";
           }else{
             alert('Enter correct otp')
           }
