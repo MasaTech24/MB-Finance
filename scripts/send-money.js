@@ -35,7 +35,7 @@ const database = firebase.database();
 // all local transfer inputs 
 
 Cance_btn.addEventListener('click',  () =>{
-  window.location.replace("/my_account.html");
+  window.location.replace("/MB-Finance/my_account.html");
 })
 
 // for local  transaction 
