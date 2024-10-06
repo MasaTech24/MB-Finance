@@ -83,7 +83,7 @@ signOutBtnn.addEventListener('click', () => {
   sessionStorage.removeItem("userName");
   sessionStorage.removeItem("userChackings");
   sessionStorage.removeItem("userSavings");
-  window.location.replace('/index');
+  window.location.replace('/MB-Finance/index');
   sessionStorage.removeItem('isLoggedIn');
 })
 
