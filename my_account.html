@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Orbitron:wght@400;500&family=Rubik+Puddles&display=swap" rel="stylesheet">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <link rel="stylesheet" href="styles/bank.css">
+  <!-- <link rel="stylesheet" href="styles/send-money.css"> -->
+  <title>MB Finance</title>
+</head>
+<body>
+  <header>
+    <div class="header-one">
+      <div class="logo">MBF</div>
+
+      <!-- <img src="images/bmo-blue.svg" alt="header-logo" width="100px"> -->
+
+      <a href="index.html" class="js-sign-out">SIGN OUT</a>
+    </div>
+
+    <div class="header-two js-header-two">
+      <div class="account-balance">
+        <span>Your Balance</span>
+        <div class="checking-div">
+          <p class="total-balance" id="js-checking"><p>
+          <span id="checking">checking</span>
+        </div>
+        <div class="saving-div">
+          <p id="saving"></p>
+          <span>Saving</span>
+        </div>
+        </p>
+      </div>
+      <a href="send-money.html"> 
+        <!-- id="sendmoneybtn" -->
+        <div class="add-card">
+          <p>Send Money</p>
+  
+          <img src="images/snd.png" alt=""  height="18px">
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="js-main">
+    <div class="bank-card">
+      <img src="images/visa.svg" alt="" class="visa" width="100px">
+
+      <div class="card-number">
+        <p>**** **** **** 8686</p>
+        <img src="images/Chip_Card (1).svg" alt="Chip_Card img" width="46px">
+      </div>
+
+      <div class="card-owners-name">
+        <p id="name"></p>
+
+        <p>12/24</p>
+      </div>
+
+      <img src="//s3.amazonaws.com/appforest_uf/f1616636353989x171041585587394780/card-overlay-white-2.svg" alt="" class="bg">
+      
+    </div>
+
+    <h1 class="transaction ">Transactions</h1>
+    <div id="js-transaction" class="transactionsList">
+  
+      <!-- <div class="transactions-lists ">
+  
+      </div> -->
+  
+      <!-- <div class="transactions-lists">
+        <div class="product-item">
+          <div>Fox Christine</div>
+          <p>Debt</p>
+        </div>
+  
+        <div class="incoming-amount-div">
+          <div>+$6,500</div>
+        </div>
+      </div>
+  
+      <div class="transactions-lists">
+        <div class="product-item">
+          <div>Trem LLC</div>
+          <p>Freight payment</p>
+        </div>
+  
+        <div class="incoming-amount-div">
+          <div>+$17,550</div>
+        </div>
+      </div> -->
+    
+    </div>
+  </main>
+
+
+  <script type="module" src="scripts/bank.js"></script>
+  <script type="module" src="scripts/transaction.js"></script>
+</body>
+</html>
